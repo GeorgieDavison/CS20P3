@@ -9,6 +9,7 @@ public class exercise4 {
         
         System.out.print("Enter your mass in kilograms: ");
         double mass = input.nextDouble();
+        input.close();
         //Energy in Joules 
         double c = 3 * Math.pow(10, 8);
         double e = mass * Math.pow(c, 2);
