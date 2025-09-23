@@ -1,24 +1,93 @@
 package Mastery;
+
+
+
 import java.util.Scanner;
 
-public class exercise4 {
+
+
+public class exercise7 {
+
+
 
 	public static void main(String[] args) {
+
 		// TODO Auto-generated method stub
+
         Scanner input = new Scanner(System.in);
+
         
-        System.out.print("Enter your mass in kilograms: ");
-        double mass = input.nextDouble();
+
+        System.out.print("Enter an integer: ");
+
+        int firstInteger = input.nextInt();
+
+        System.out.print("Enter a second integer: ");
+
+        int secondInteger = input.nextInt();
+
         input.close();
-        //Energy in Joules 
-        double c = 3 * Math.pow(10, 8);
-        double e = mass * Math.pow(c, 2);
-        double joulesPerBulb = 360000;
-        double numberOfBulbs = e/joulesPerBulb;
-        String output1 = String.format("The energy produced in Joules is = %s", e);
-        System.out.println(output1);
+
         
-        String output2 = String.format("The number of 100-watt light bulbs powered = %s", numberOfBulbs);
-        System.out.println(output2);
-	}	
+
+        System.out.println();
+
+        
+
+        System.out.println(String.format(
+
+        		"%s / %s = %s",
+
+        		firstInteger,
+
+        		secondInteger,
+
+        		firstInteger / secondInteger
+
+    		));
+
+        System.out.println(String.format(
+
+        		"%s %% %s = %s",
+
+        		firstInteger,
+
+        		secondInteger,
+
+        		firstInteger % secondInteger 
+
+        		));
+
+        
+
+        System.out.println();
+
+        
+
+        System.out.println(String.format(
+
+        		"%s / %s = %s",
+
+        		secondInteger,
+
+        		firstInteger,
+
+        		secondInteger / firstInteger
+
+    		));
+
+        System.out.println(String.format(
+
+        		"%s %% %s = %s",
+
+        		secondInteger,
+
+        		firstInteger,
+
+        		secondInteger % firstInteger 
+
+        		));
+
+	}
 }
+
